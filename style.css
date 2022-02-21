@@ -1,428 +1,56 @@
 style.css
-header {
-    display: flex;
-    flex-directionwidth: fit-content;;
-    alignjustify-content: space-evenly;;
-    padding: 5px 0;
+body
+
+  body {
     margin: 0;
   }
-  /* Add a black background color to the top navigation */
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
-}
-  .nav ul {
-    disptable-layout: jus ;
-    list-style: none;
-    background-color: #0A574A;
-    text-align: center;
-    padding: 2;
-    margin: 1;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
+  header {
+    background-color: #373738;
+    padding: 15px;
   }
-  .nav li {
-    font-family: sans-serif;
-    font-size: 1.2em;
-    line-height: 40px;
-    height: 40px;
-    border-bottom: 1px solid #888;
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    
-  }
-   
-  .nav li:hover {
-    background-color:#000000;
-    cursor: pointer;
-  }
-   
-  .nav li.active {
-    background-color: white;
-    color: black;
-    cursor: default;
-  }
-  
-  /* Modal stuff */
-  #modalBtn {
-    display: block;
-    color: white;
-    background-color: #005f5f;
-    border-radius: 12px;
-    border: none;
-    padding: 20px 80px;
-    font-size: 18px;
-    cursor: pointer;
-    font: 'sans-serif';
-    margin: 0 auto;
-  }
-  
-  
-  #modalBtn:hover {
-    background-color: #005f5f;
-    cursor: pointer;
-  }
-  
-  
-  
-  label {
-    font-size: 18px;
-    font-style: sans-serif;
-    color: white;
-    padding: 12px;
-  }
-  
-  fieldset {
-    font-style: 'sans-serif'; 
-    margin: 50px 0;
-    background-color: #005f5f;
-    padding: 5px;
-  }
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    width: 100vw; /* Full width */
-    height: 100vh; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-   
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid rgb(56, 55, 58);
-    width: 60%;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: rgb(56, 55, 58;
-    float: center;
-    
-  }
-  .exit {
-    display: flex; 
-    align-items: flex-end;
-    justify-content: flex-end;
-    font-size: 28px;
-    
-    padding: 0 8px;
-    background-color: #005f5f;
+  header ul {
+    float: right;
     color: white;
   }
-  
-  .exit:hover,
-  .exit:bounce {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
+  header li {
+    display: inline-block;
+    padding: 0px 5px;
   }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  header p {
+    display: inline-block;
   }
-  
-  
-  
-  @media screen and (max-width: 600px) {
-    nav {
-      display: block;
-    }
-  }
-  
-  .heroimg {
-    display: flex;
-    height: stretch;
-    justify-content: flex-start;
-    padding: 25px;
-    align-items: center;
-    
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    margin: 0;
-    flex-shrink: 1;
-  
+  .heroImg {
+    background-color: #EBEBEB;
+    padding: 100px 15px;
   }
   .content {
-    display: flex;
-    align-items:flex-start;
-    
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 48px;
-    font-family: sans-serif;
-  }
-  p {
-    text-align: center;
-    font-size: 28px;
-  }
-  
-  .aboutMe p {
-    display: flex;
-    flex-wrap: wrap;
-   
-  } 
-  
-  
-  /* Skills css - grid */
-  
-  
-  .mySkills {
-    display: grid;
-    grid-template-areas:
-      "mySkills1 mySkills2 mySkills3";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    border: 5px solid #005f5f;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-   
-    gap: 1.5rem;
-    padding: 50px;
-  }
-  @media screen and (max-width: 600px) {
-    .mySkills {
-      grid-template-areas:
-      'mySkills1'
-      'mySkills2'
-      'mySkills3';
-      grid-template-rows: 1fr 1fr 1fr;
-    }
-    img {
-      max-width: 200px;
-      max-height: 200px;
-    }
-  }
-  
-  .h2skills {
-    display: flex;
-    font-family: 'Sans-serif';
-    font-size: 48px;
-    color: white;
-    background-color: #005f5f;
-    align-items: center;
-    justify-content: center;
-    height: 75px;
-    width: 100%;
-    padding: 30px;
-    }
-  
-  .mySkills1 {
-    grid-area: mySkills1;
-    color: white;
-    background-color: #005f5f;
-    gap: 1.5rem;
-    margin: 20px;
-    
-    
-  }
-  
-  .mySkills2 {
-    grid-area: mySkills2;
-    color: white;
-    background-color: #005f5f;
-    margin: 20px;
-    gap: 1.5rem;
-  }
-  
-  .mySkills3 {
-    grid-area: mySkills3;
-     color: white;
-    background-color: #005f5f;
-    margin: 20px;
-    gap: 1.5rem;
-  }
-  
-  h3 {
-    text-align: center;
-    font-family: 'Sans-serif';
-    font-size: 38px;
-    padding: 50px;
-  }
-  
-  ul {
-    margin: 100px;
-  }
-  li {
-    font-family: 'Sans-serif';
-    font-size: 28px;
-    padding: 5px;
-  }
-  
-  
-  /* my work section using flexbox */
-  
-  .myWork {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 5px solid rgb(56, 56, 58);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding: 50px;
-  }
-  .myWorkH3 {
-    
-    text-align: center;
-    font-style: bold;
-    
-  }
-  
-  
-  .myWorkp {
-   text-align: center;
-    flex-wrap: wrap;
-    font-size: 28px;
-    font-family: 'notoserif';
-    padding: 20px;
-   
-   }
-  .myButton {
-    display: block;
-    color: white;
-    background-color: ##3C504C;
-    border-radius: 12px;
-    border: none;
-    padding: 20px 85px;
-    font-size: 18px;
-    cursor: pointer;
-    font: 'noto serif';
+    max-width: 300px;
     margin: 0 auto;
-    
-  }
-  
-  .myButton:hover {
-    background-color: #005f5f;
-    cursor: pointer;
-  }
-  
-  .myWasteaway {
-    display: flex;
-    border: 5px solid rgb(56, 56, 58);
-    border-radius: 20px;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 50px 0;
     padding: 50px;
-    width: 94%;
+    background-color: #FFFFFF;
+    text-align: center;
   }
-  
-  
-  .flexItemleft {
-    margin: 50px;
-  }
-  
-  .flexItemright {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 50px;
-  }
-  
-  .h2footer {
-    display: flex;
-    font-family: 'noto serif';
-    font-size: 48px;
+  button {
+    padding: 15px;
+    background-color: #373738;
     color: white;
-    background-color: #  005f5f;
-    align-itemalign-self: stretch;
-    justify-content: space space-evenly;
-    height: 75px;
-    width: 100%;
-    padding: 30px;
-    }
-  
+    font-size: 15px;
+    border-radius: 4px;
+  }
   footer {
-    border: 5px solid ##3C504C;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
+    background-color: #373738;
+    padding: 5px;
+    color: white;
   }
-  
-  media screen and (max-width: 600px) {
-    footer {
-      display: inline-flex;
-      flex-direction: column;
-    }
-  
-    .footerCard {
-      border-right: 0px;
-    }
-    .copyright {
-      display: flex;
-      justify-content: center;
-    }
-   
+  footer ul {
+    list-style: none;
+    padding-left: 5px;
   }
-  
-  
-  .footerSocial {
-    display:  inline-flex;;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    margin: 0  inline-flex;
-    
+  footer li {
+    display: inline-block;
+    padding: 0px 7px;
   }
-  
-  img {
-    margin: 5px;
-  }
-  
-  .footerCard {
-    display: inline-flex;
-    flex-direction: row;
-    border-right: 5px solid #000 ;
-    margin: 50px;
-    width: 35%;
-    font-family: 'noto serif';
-    font-size: 28px;
-    align-items: center;
-    justify-content: center;
-  
-  }
+
   
   .copyright {
     display: flex;
@@ -434,5 +62,3 @@ header {
     color:#fff;
   
   }
-  </div>
-</div>
